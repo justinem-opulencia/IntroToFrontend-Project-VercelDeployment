@@ -1,0 +1,74 @@
+.tournament-view {
+    padding: 20px;
+}
+
+.tournament-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tournament-title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.buttons-sections {
+    display: flex;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #1e90ff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #1a7ed6;
+}
+
+.btn-secondary {
+    background-color: #ff6347;
+    color: #fff;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #e6533b;
+}
+
+.games-list {
+    margin-top: 20px;
+    display: flex 1;
+    justify-content: center;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.game-item {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.game-link {
+    text-decoration: none;
+}
+
+.game-link:hover .game-card {
+    transform: scale(1.02);
+    transition: transform 0.2s;
+}

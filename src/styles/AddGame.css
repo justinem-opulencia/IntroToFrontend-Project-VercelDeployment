@@ -1,0 +1,105 @@
+.add-game-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-selector {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.team-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-select label {
+    margin-bottom: 10px;
+}
+
+.load-players-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.load-players-btn:hover {
+    background-color: #0056b3;
+}
+
+.game-details {
+    margin-top: 20px;
+}
+
+.player-stats-section {
+    margin-bottom: 20px;
+}
+
+.player-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.player-name {
+    width: 35%;
+}
+
+.player-name p {
+    margin: 0;
+}
+
+.stat-input {
+    margin-left: 10px;
+}
+
+.stat-input input {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.game-date-time {
+    margin-bottom: 20px;
+}
+
+.save-game-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-game-btn:hover {
+    background-color: #218838;
+}
+
+.save-game-container {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    justify-content: space-around;
+}

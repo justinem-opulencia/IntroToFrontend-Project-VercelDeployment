@@ -57,21 +57,25 @@ const TournamentView = () => {
 
             <div className="games-section">
                 <h3 className="section-title">Games History</h3>
-                <div className="games-list">
-                    {games.map((game) => (
-                        <div key={game.id} className="game-item">
-                            <Link to={`/tournament/${tournamentId}/game/${game.id}`} className="game-link">
-                                <GameCard 
-                                    teamAName={teams.find(t => t.id === game.teamAId)?.name}
-                                    teamAScore={game.scoreA}
-                                    teamBName={teams.find(t => t.id === game.teamBId)?.name}
-                                    teamBScore={game.scoreB}
-                                    dateTime={game.dateTime.seconds * 1000}
-                                />
-                            </Link>
-                        </div>
-                    ))}
-                </div>
+                {games.length > 0 ? (
+                    <div className="games-list">
+                        {games.map((game) => (
+                            <div key={game.id} className="game-item">
+                                <Link to={`/tournament/${tournamentId}/game/${game.id}`} className="game-link">
+                                    <GameCard 
+                                        teamAName={teams.find(t => t.id === game.teamAId)?.name}
+                                        teamAScore={game.scoreA}
+                                        teamBName={teams.find(t => t.id === game.teamBId)?.name}
+                                        teamBScore={game.scoreB}
+                                        dateTime={game.dateTime.seconds * 1000}
+                                    />
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                ) : (
+                    <p>No games found.</p>
+                )}
             </div>
         </div>
     );
